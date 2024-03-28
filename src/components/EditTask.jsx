@@ -14,7 +14,7 @@ const EditTasks = () => {
 
   const fetchData = () => {
     axios
-      .get(`http://localhost:5000/api/getOneTask/${taskId}`, "", {
+      .get(`https://task-management-system-1.vercel.app/getOneTask/${taskId}`, "", {
         headers: {
           "Content-Type": "application/json",
         },
