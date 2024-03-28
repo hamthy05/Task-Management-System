@@ -17,8 +17,8 @@ const ViewTask = () => {
 
   const fetchData = () => {
     const apiUrl = filterTerm
-      ? `http://localhost:5000/api/getSearchTask?task_name=${filterTerm}`
-      : "http://localhost:5000/api/getAllTask";
+      ? `https://task-management-system-1.vercel.app/getSearchTask?task_name=${filterTerm}`
+      : "https://task-management-system-1.vercel.app/getAllTask";
 
     axios
       .get(apiUrl, {
@@ -42,7 +42,7 @@ const ViewTask = () => {
 
   const deleteTask = (taskId) => {
     axios
-      .delete(`http://localhost:5000/api/deleteTask/${taskId}`, {
+      .delete(`https://task-management-system-1.vercel.app/deleteTask/${taskId}`, {
         headers: {
           "Content-Type": "application/json",
         },
