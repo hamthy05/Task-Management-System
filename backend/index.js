@@ -14,7 +14,11 @@ const mongoose = require("mongoose");
 
 // app.use(cors(corsOptions));
 
-app.use(cors());
+app.use(cors(
+  {
+    origin: ["task-management-system-tr8e.vercel.app"]
+  }
+));
 
 
 var port = process.env.PORT || 6000;
